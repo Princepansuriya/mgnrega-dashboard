@@ -1,0 +1,7 @@
+{
+  "name": "MGNREGA District Performance Tracker",
+  "description": "An easy-to-use tool for citizens to track the performance of the MGNREGA program in their district. View current and historical data with simple charts and metrics to understand local employment generation.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
