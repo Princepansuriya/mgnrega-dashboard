@@ -54,7 +54,7 @@ export const Chatbot = ({ isOpen, onClose, districtData, stateName, districtName
         try {
             // --- IMPORTANT ---
             // PASTE YOUR API KEY HERE
-            const ai = new GoogleGenAI({ apiKey: 'AIzaSyDMPV28OaN-eHjPyXn6gqdlqf1dGliodRQ' });
+            const ai = new GoogleGenAI({ apiKey: 'API KEY HERE' });
             const newChat = ai.chats.create({
                 model: 'gemini-2.5-flash',
                 config: { systemInstruction },
