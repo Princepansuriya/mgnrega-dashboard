@@ -44,7 +44,7 @@ export const DistrictSelector = ({ states, districts, onStateSelect, onSelect, s
                 try {
                     // --- IMPORTANT ---
                     // PASTE YOUR API KEY HERE
-                    const ai = new GoogleGenAI({ apiKey: 'AIzaSyDMPV28OaN-eHjPyXn6gqdlqf1dGliodRQ' });
+                    const ai = new GoogleGenAI({ apiKey: 'API KEY HERE' });
                     const response = await ai.models.generateContent({
                         model: 'gemini-2.5-flash',
                         contents: `You are an expert geographer for India, specializing in reverse geocoding. Your task is to determine the administrative district for a given set of coordinates within a specific state. Analyze the latitude ${position.coords.latitude} and longitude ${position.coords.longitude}. Consider proximity to major cities, landmarks, and administrative boundaries within the state of ${selectedState}. Your answer must be one of the following districts: [${districts.join(', ')}]. Provide your answer in a structured JSON format, including a confidence score and your reasoning.`,
